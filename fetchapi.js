@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     } else if (req.url == "/firstapi") {
         res.writeHead(200, { "content-type": "text/html" });
         res.end(`My name is ${objData[0].name} and i am ${objData[0].age} years old as learning ${objData[0].language} for making website`);
-    }else if (req.url == "/secondapi") {
+    } else if (req.url == "/secondapi") {
         res.writeHead(200, { "content-type": "text/html" });
         res.end(`My name is ${objData[1].name} and i am ${objData[1].age} years old as learning ${objData[1].language} for making website`);
     }
